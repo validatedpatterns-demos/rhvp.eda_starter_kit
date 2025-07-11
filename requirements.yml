@@ -1,4 +1,4 @@
 ---
 collections:
-  - kubernetes.core
-  - community.okd
+  - containers.podman
+  - community.general
