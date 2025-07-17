@@ -10,6 +10,6 @@
   rules:
     - name: Dummy rule
       condition: |
-        event.payload
+        true
       action:
         debug:
