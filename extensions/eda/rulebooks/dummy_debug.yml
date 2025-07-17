@@ -10,6 +10,6 @@
   rules:
     - name: Dummy rule
       condition: |
-        true
+        event
       action:
         debug:
