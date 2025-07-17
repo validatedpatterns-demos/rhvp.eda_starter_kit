@@ -1,6 +1,6 @@
 ---
 - name: Dummy listener for debug actions
-  hosts: all
+  hosts: localhost
   sources:
     - name: Dummy Webhook entry
       ansible.eda.webhook:
@@ -9,6 +9,7 @@
 
   rules:
     - name: Dummy rule
-      condition: true
+      condition: |
+        event.payload
       action:
         debug:
