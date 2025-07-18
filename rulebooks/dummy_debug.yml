@@ -10,7 +10,7 @@
   rules:
     - name: Dummy rule
       condition: |
-        event.status == "print"
+        event.payload.status == "print"
       action:
         print_event:
           pretty: true
