@@ -10,6 +10,7 @@
   rules:
     - name: Dummy rule
       condition: |
-        event
+        event.status == "print"
       action:
-        debug:
+        print_event:
+          pretty: true
