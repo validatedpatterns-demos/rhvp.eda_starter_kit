@@ -15,5 +15,5 @@
         run_job_template:
           name: Ping
           organization: EDA-SK Demo
-          set_facts: true
-          include_events: true
+          # set_facts: true
+          # include_events: true
