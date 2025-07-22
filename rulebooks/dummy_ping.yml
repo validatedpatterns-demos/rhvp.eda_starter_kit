@@ -1,0 +1,19 @@
+---
+- name: Dummy listener for ping playbook
+  hosts: localhost
+  sources:
+    - name: Dummy Webhook Ping JT
+      ansible.eda.webhook:
+        host: 0.0.0.0
+        port: 5001
+
+  rules:
+    - name: Ping rule
+      condition: |
+        event.payload.status == "ping"
+      action:
+        run_job_template:
+          name: Ping
+          organization: EDA-SK Demo
+          set_facts: true
+          include_events: true
