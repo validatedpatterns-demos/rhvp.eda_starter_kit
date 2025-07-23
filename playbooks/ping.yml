@@ -1,5 +1,5 @@
 ---
-- name: Basic connectivity test
+- name: Placeholder for Job Template
   hosts: all
   gather_facts: false
   become: false
